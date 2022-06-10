@@ -35,14 +35,38 @@
     <main class="contenedor">
         <h1>Producto</h1>
 
-        <div class="contenido_producto">
+        <div class="productos">
 
-            <div>
-
+            <div class="productos__imagen">
+                <img src="img/1.jpg" alt="imagen">
             </div>
 
-            <div>
-                <img src="img/1.jpg" alt="imagen">
+            <div class="contenido_producto_info">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam alias minus beatae, optio magni
+                    praesentium animi enim, voluptatum velit et eos consequatur incidunt nostrum iure officiis, numquam
+                    vitae autem tempora!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam alias minus beatae, optio magni
+                    praesentium animi enim, voluptatum velit et eos consequatur incidunt nostrum iure officiis, numquam
+                    vitae autem tempora!
+
+                </p>
+
+                <form class="formulario">
+                    <div class="formulario__campos">
+                        <select class="formulario__campos__campo">
+                            <option selected disabled>Seleccione una talla </option>
+                            <option>Pequeña</option>
+                            <option>Mediana</option>
+                            <option>Grande</option>
+                        </select>
+
+                        <input class="formulario__campos__campo" type="number" min="1" max ="100" placeholder="Cantidad">
+                    </div>
+
+                    <div class="formulario__boton">
+                        <input class="formulario__boton_boton" type="submit" value="Agregar al carrito">
+                    </div>
+                </form>
             </div>
         </div>
     </main>

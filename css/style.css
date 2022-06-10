@@ -276,3 +276,63 @@ estilo a la pagina sobre nosotros
 .contenido__texto__titulo{
  color:var(--Secundario);
 }
+
+
+
+
+/* ==============================================
+estilo a la pagina Producto
+============================================== */
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+@media (min-width: 768px) {
+    .productos{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.productos__imagen{
+    margin: 0 auto;
+}
+
+.formulario__campos{
+    display: flex;
+    flex-direction: column;
+   gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .formulario__campos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.formulario__boton{
+    margin-top: 3rem;
+} 
+
+.formulario__boton_boton{
+    width: 100%;
+    padding: 1rem;
+    background: var(--primario);
+    color: var(--colorletra);
+}
+
+
+.formulario__boton_boton:hover{
+   cursor: pointer;
+   background: var(--Secundario);
+}
+
+
+.formulario__campos__campo{
+ width: 100%;
+ background: var(--negro);
+ border: solid 3px white;
+ color: var(--colorletra);
+ text-align: center;
+}
